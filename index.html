@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Natpanthep | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container header-content">
+      <h1>Natpanthep</h1>
+      <nav class="navbar">
+        <a href="#home">🏠 Home</a>
+        <a href="#about">📁 About</a>
+        <a href="#portfolio">📂 Portfolio</a>
+        <a href="#contact">📬 Contact</a>
+      </nav>
+      <button id="darkModeToggle">🌙 Dark Mode</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h3 class="fade-in">Computer Science</h3>
+          <h2 class="fade-in"><b>Hi, I'm Natpanthep Phongpattakorn</b></h2>
+          <p class="fade-in">From Huachiew Chalermprakiet University</p>
+          <div class="buttons fade-in">
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="mailto:you@example.com">Email Me</a>
+          </div>
+        </div>
+        <img src="img/self.jpg" alt="Profile Photo" class="profile-pic" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+  <div class="container">
+    <h2>About Me</h2>
+
+    <div class="about-content">
+      <div class="text-block">
+        <p>
+          I am determined to become a software developer and enthusiastic about applying the knowledge
+          gained from experts to enhance the efficiency of software. I am also committed to improving
+          my communication skills and teamwork abilities. Have some basic knowledge about coding and web working.
+        </p>
+
+        <!-- Toggle Buttons -->
+        <div class="tab-buttons">
+          <button class="tab-button active" data-tab="skills">Skills</button>
+          <button class="tab-button" data-tab="education">Education</button>
+        </div>
+
+        <!-- Toggle Content -->
+        <div id="skills" class="tab-content active">
+          <h4>Soft Skills</h4>
+          <ul>
+            <li>Collaboration.</li>
+            <li>Asking for Help.</li>
+            <li>Active Listening.</li>
+            <li>Stress Management.</li>
+          </ul>
+
+          <h4>Hard Skills</h4>
+          <p>
+            <img src="img/html5.png" alt="HTML" width="35">
+            <img src="img/css3.jpg" alt="CSS" width="35">
+            <img src="img/js.webp" alt="JavaScript" width="35">
+            <img src="img/c.png" alt="C" width="35">
+            <img src="img/java.png" alt="Java" width="35">
+            <img src="img/sql.webp" alt="SQL" width="35">
+            <img src="img/php.webp" alt="PHP" width="35">
+          </p>
+        </div>
+
+        <div id="education" class="tab-content">
+          <h4>  </h4>
+          <p>
+            <span class="highlight">Grade 7–9</span><br />
+            chonradsadornumrung school<br />
+            English-Mathematics Program.<br />
+            2015 - 2018
+          </p>
+
+          <p>
+            <span class="highlight">Grade 10-12</span><br />
+            Bansuan Jananusorn School<br />
+            Studying Arts and Languages Program.<br />
+            2018 - 2021
+          </p>
+
+          <p>
+            <span class="highlight">Now</span><br />
+            Huachiew Chalermprakiet University<br />
+            Faculty of Science and Technology<br />
+            Majoring in Computer Science.<br />
+            2021 - Present | GPA : 2.41
+          </p>
+        </div>
+      </div>
+
+      <img src="img/self2.jpg" alt="My Self" class="my-self" />
+    </div>
+  </div>
+</section>
+
+
+  <!-- Portfolio -->
+  <section class="projects" id="portfolio">
+    <div class="container">
+      <div class="portfolio-header">
+        <h2>Portfolio</h2>
+        <div class="portfolio-toggle">
+          <button class="toggle-btn active" data-category="project">Project</button>
+          <button class="toggle-btn" data-category="certificate">Certificate</button>
+        </div>
+      </div>
+      <div class="portfolio-grid">
+        <!-- Project Items -->
+        <div class="portfolio-item" data-category="project">
+          <img src="img/piano.png" alt="Piano">
+          <h3>🎵 Perfect Tiles 🎮</h3>
+          <p>Developed using CSS, HTML, and JavaScript, and learned about 2D graphics.</p>
+          <a href="https://github.com/Natpanthep/Perfect-Tiles" class="see-also" target="_blank">See more</a>
+        </div>
+
+        <div class="portfolio-item" data-category="project">
+          <img src="img/ex.png" alt="Website">
+          <h3>🌍 Province Website</h3>
+          <p>This is a simple educational website built using HTML, CSS, and Bootstrap 5.1.0. The site showcases information about Thai provinces and famous local dishes, ideal for a beginner web project or cultural presentation.</p>
+            <a href="https://github.com/Natpanthep/ProvinceWebsite" class="see-also" target="_blank">See more</a>
+        </div>
+
+        <!-- Certificate Items -->
+        <div class="portfolio-item" data-category="certificate" style="display: none">
+            <a href="img/cer/BMD1012.pdf" target="_blank">
+                <h3>Completed the e-Learning course on Design Thinking in Practice</h3>
+            </a>
+        </div>
+        <div class="portfolio-item" data-category="certificate" style="display: none">
+            <a href="img/cer/BMD1012.pdf" target="_blank">
+                <h3>Completed the e-Learning course on Startup Business</h3>
+            </a>
+        </div>
+        <div class="portfolio-item" data-category="certificate" style="display: none">
+            <a href="img/cer/BMD1012.pdf" target="_blank">
+                <h3>Completed the e-Learning course on Innovation Mindset</h3>
+            </a>
+        </div>
+        <div class="portfolio-item" data-category="certificate" style="display: none">
+            <a href="img/cer/BMD1012.pdf" target="_blank">
+                <h3>Completed the e-Learning course on Creativity & Design in Entrepreneurship</h3>
+            </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: 651785hcu.ac.th</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Natpanthep</p>
+    </div>
+  </footer>
+
+  <script>
+  const toggleButtons = document.querySelectorAll('.toggle-btn');
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const selectedCategory = button.getAttribute('data-category');
+
+      // เปลี่ยนปุ่ม active
+      toggleButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      // แสดงเฉพาะ item ที่ตรงกับประเภทที่เลือก
+      portfolioItems.forEach(item => {
+        if (item.getAttribute('data-category') === selectedCategory) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+
+</script>
+
+  <script>
+  const buttons = document.querySelectorAll(".tab-button");
+  const contents = document.querySelectorAll(".tab-content");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      buttons.forEach(btn => btn.classList.remove("active"));
+      contents.forEach(content => content.classList.remove("active"));
+
+      button.classList.add("active");
+      const tab = button.getAttribute("data-tab");
+      document.getElementById(tab).classList.add("active");
+    });
+  });
+</script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
